@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ArbuckleAppActivity!</string>
+    <string name="app_name">Arbuckle 2Go</string>
+    <string name="quantity_prompt">Quantity</string>
+    <string name="Chef_Special_Detail">3 California Rolls \n&amp; choices below</string>
+    <string name="close">Exit</string>
+    <string name="orderStatus">You have not sent an order</string>
+    <string name="cancel">cancel</string>
+   
+
+</resources>

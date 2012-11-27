@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <TextView 
+        android:id="@+id/tvExit_areyousure"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="This will log you out."
+        android:drawableLeft="@null">      
+        </TextView>
+    
+
+<RelativeLayout 
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparency"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_marginTop="20dp" >
+
+     <Button
+        android:id="@+id/bYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Yes"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="18sp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/confirmbackground"
+        android:textColor="@color/confirm_text"
+        android:drawableLeft="@null" >
+    </Button>
+    
+    <Button
+        android:id="@+id/bNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+      android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="No"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/cancelallbackground"
+        android:textColor="@color/cancelall_text"
+        android:drawableLeft="@null" />
+</RelativeLayout>
+</LinearLayout>

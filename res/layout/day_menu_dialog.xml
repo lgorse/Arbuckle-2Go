@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llDayMenuDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuTitle"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:textSize="20dp"
+        android:paddingBottom="5dp"
+        android:text="Arbuckle Menu"
+        android:gravity="center_vertical"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuDate"
+        android:drawableLeft="@null"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:paddingBottom="5dp"
+        />
+    
+    <View
+        android:layout_width="match_parent" 
+        android:layout_height="2dp"
+        android:background="@color/blue"
+        />
+
+    <ListView
+        android:id="@+id/dayMenuList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:divider="@color/black"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

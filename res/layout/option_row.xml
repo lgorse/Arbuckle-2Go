@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basicoptionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlChefs_Special_Order"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@color/Chef_Option_Background"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:id= "@+id/llSpecialLayout">
+
+            <TextView
+                android:id="@+id/tvChef_Special_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="hello"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvChef_Special_Detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/Chef_Special_Detail"
+                android:textColor="@color/Detail_Text"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        
+        <TextView
+            android:id="@+id/tvChef_Special_Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/combopointer"
+            android:button="@null"
+            android:drawableBottom="@drawable/orderbuttonspecial"
+            android:enabled="false"
+            android:focusable="false"
+            android:padding="3dp"
+            android:text="Combo Details"
+            android:textColor="@color/combopointer_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvChef_Special_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvChef_Special_Confirm"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/llSpecialLayout"
+            android:gravity="right"
+            android:text="$7.85"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/standardOptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/option_background"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/llOptionInfoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="hello"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvOptionDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="TextView"
+                android:textColor="@color/Detail_Text"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+      
+        <TextView
+            android:id="@+id/tvSpecialOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/combopointer"
+            android:button="@null"
+            android:drawableBottom="@drawable/orderbuttonspecial"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="right"
+            android:padding="3dp"
+            android:text="Combo Details"
+            android:textColor="@color/combopointer_text"
+            android:textSize="14sp" />
+        
+          <ImageView
+            android:id="@+id/ivGroupIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:button="@null"
+            android:src="@drawable/group_expander"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="right"
+            android:padding="3dp"
+             />
+
+        <TextView
+            android:id="@+id/tvOptionPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/llOptionInfoLayout"
+            android:layout_alignBaseline="@id/tvSpecialOK"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true" 
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

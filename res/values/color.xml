@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="option_separator">#004F5D</color>
+    <color name="Detail_Text">#B99C6B</color>
+    <color name="Item_Order_Background">#66CFE6</color>
+    <color name="text_tab_unselected">#C8C9C3</color>
+    <color name="Tab_Unselected_Separator">#50CBD1D4</color>
+    <color name="order_background">#5000</color>
+    <color name="order_cancel_background">#EC9384</color>
+    <color name="order_cancel_text">#B0232A</color>
+    <color name="order_confirm_background">#A4D867</color>
+    <color name="order_confirm_text">#317023</color>
+    <color name="blue">#ff5b97b1</color>
+    <color name="listview_selector">#40CAC4C2</color>
+    <color name="order_background_notselectable">#00000000</color>
+    <color name="order_background_ordermade">#007A97</color>
+    <color name="text_order_noorder_selectable">#ff1ea910</color>
+    <color name="order_stroke_selectable">#ff1ea910</color>
+    <color name="order_subsets">#616A74</color>
+    <color name="order_background_orderclicked">#D7E9A1</color>
+    <color name="order_disabled_buttons">#BABBBC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#407A52</color>
+    <color name="light_green">#38b48b</color>
+    <color name="red">#B22222</color>
+    <color name="grey">#E3E3E3</color>
+    <color name="Red_Translucent">#80B22222</color>
+    <color name="black">#252321</color>
+    <color name="transparency">#00000000</color>
+    <color name="Chef_Option_Background">#F7F7F7</color>
+   
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </TabWidget>
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="30dip" >
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <SlidingDrawer
+        android:id="@+id/sdOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <TextView
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@drawable/handlerempty"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Place an order"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+           
+             />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/order_background"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/tvOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@color/white"
+                android:cacheColorHint="@null"
+                android:textColor="@color/order_background"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:background="@color/order_background" />
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right"
+                android:text="Hello, World"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bCancelAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/cancelallbackground"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Cancel All"
+                    android:textColor="@color/cancelall_text"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/bConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/confirmbackground"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="Confirm"
+                    android:textColor="@color/confirm_text"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</FrameLayout>
